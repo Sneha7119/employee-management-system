@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f14c5c25-d008-48a3-ad9b-4db3afee9fe7" name="Changes" comment="Load balancing">
+    <list default="true" id="f14c5c25-d008-48a3-ad9b-4db3afee9fe7" name="Changes" comment="Initial commit for api-gateway">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +49,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/sneha/Workspace/employee-management-system/api-gateway/pom.xml",
     "project.structure.last.edited": "Modules",
@@ -55,7 +57,20 @@
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
-  <component name="RunManager" selected="Application.DepartmentServiceApplicationInstance2">
+  <component name="RunManager" selected="Application.DepartmentServiceApplication">
+    <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.certification.apigateway.ApiGatewayApplication" />
+      <module name="api-gateway" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.certification.apigateway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="DepartmentServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.certification.departmentservice.DepartmentServiceApplication" />
       <module name="department-service" />
@@ -111,12 +126,14 @@
     </configuration>
     <list>
       <item itemvalue="Application.DepartmentServiceApplicationInstance2" />
+      <item itemvalue="Application.ApiGatewayApplication" />
       <item itemvalue="Application.DepartmentServiceApplication" />
       <item itemvalue="Application.EmployeeServiceApplication" />
       <item itemvalue="Application.ServiceRegistryApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.DepartmentServiceApplication" />
         <item itemvalue="Application.EmployeeServiceApplication" />
         <item itemvalue="Application.ServiceRegistryApplication" />
@@ -153,13 +170,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677487659633</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Initial commit for api-gateway">
+      <created>1677490703059</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1677490703059</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding service-registry" />
     <MESSAGE value="Registering in service-registry" />
     <MESSAGE value="Load balancing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Load balancing" />
+    <MESSAGE value="Initial commit for api-gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit for api-gateway" />
   </component>
 </project>
