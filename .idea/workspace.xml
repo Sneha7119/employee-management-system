@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f14c5c25-d008-48a3-ad9b-4db3afee9fe7" name="Changes" comment="Registering in service-registry">
+    <list default="true" id="f14c5c25-d008-48a3-ad9b-4db3afee9fe7" name="Changes" comment="Load balancing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/service/impl/APIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/service/impl/APIClient.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,6 +14,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="c613022a-0d38-4055-8775-f7d696bdbcac" />
+        <option name="url" value="https://github.com/Sneha7119/employee-management-system.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -36,9 +48,10 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/sneha/Workspace/employee-management-system",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/sneha/Workspace/employee-management-system/api-gateway/pom.xml",
     "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
@@ -133,12 +146,20 @@
       <option name="project" value="LOCAL" />
       <updated>1677481350159</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Load balancing">
+      <created>1677487659633</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1677487659633</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Adding service-registry" />
     <MESSAGE value="Registering in service-registry" />
-    <option name="LAST_COMMIT_MESSAGE" value="Registering in service-registry" />
+    <MESSAGE value="Load balancing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Load balancing" />
   </component>
 </project>
