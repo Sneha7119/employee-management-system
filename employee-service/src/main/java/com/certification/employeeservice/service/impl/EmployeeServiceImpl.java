@@ -11,13 +11,15 @@ import org.modelmapper.ModelMapper;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.web.reactive.function.client.WebClient;
 
 @AllArgsConstructor
 @Service
 public class EmployeeServiceImpl implements EmployeeService {
 
     private EmployeeRepository employeeRepository;
-    private RestTemplate restTemplate;
+    // private RestTemplate restTemplate;
+    private WebClient webClient;
 
     private ModelMapper modelMapper;
     @Override
@@ -29,11 +31,19 @@ public class EmployeeServiceImpl implements EmployeeService {
     @Override
     public ApiResponseDto getEmployeeById(Long id) {
         Employee fetchedEmployee = employeeRepository.findById(id).get();
+
+        /* Using RestTemplate to communicate with Department service.
         ResponseEntity<DepartmentDto> departmentDtoResponseEntity = restTemplate.
                 getForEntity(
                         "http://localhost:8080/api/departments/get/" + fetchedEmployee.getDepartmentCode(),
                         DepartmentDto.class);
-        DepartmentDto departmentDto = departmentDtoResponseEntity.getBody();
+        DepartmentDto departmentDto = departmentDtoResponseEntity.getBody();*/
+
+        DepartmentDto departmentDto = webClient.get()
+                .uri("http://localhost:8080/api/departments/get/" + fetchedEmployee.getDepartmentCode())
+                .retrieve()
+                .bodyToMono(DepartmentDto.class)
+                .block();         // block()  -> specifies synchronous call
         ApiResponseDto apiResponseDto = new ApiResponseDto(
                 modelMapper.map(fetchedEmployee, EmployeeDto.class),
                 departmentDto);
