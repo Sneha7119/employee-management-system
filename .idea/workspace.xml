@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f14c5c25-d008-48a3-ad9b-4db3afee9fe7" name="Changes" comment="Initial commit for api-gateway">
+    <list default="true" id="f14c5c25-d008-48a3-ad9b-4db3afee9fe7" name="Changes" comment="Configuring api-gateway">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
     </list>
@@ -177,7 +177,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677490703059</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Configuring api-gateway">
+      <created>1677494656779</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1677494656779</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -185,6 +192,7 @@
     <MESSAGE value="Registering in service-registry" />
     <MESSAGE value="Load balancing" />
     <MESSAGE value="Initial commit for api-gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit for api-gateway" />
+    <MESSAGE value="Configuring api-gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="Configuring api-gateway" />
   </component>
 </project>
