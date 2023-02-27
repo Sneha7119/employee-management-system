@@ -19,7 +19,8 @@ public class EmployeeServiceImpl implements EmployeeService {
 
     private EmployeeRepository employeeRepository;
     // private RestTemplate restTemplate;
-    private WebClient webClient;
+    //private WebClient webClient;
+    private APIClient apiClient;
 
     private ModelMapper modelMapper;
     @Override
@@ -32,21 +33,25 @@ public class EmployeeServiceImpl implements EmployeeService {
     public ApiResponseDto getEmployeeById(Long id) {
         Employee fetchedEmployee = employeeRepository.findById(id).get();
 
-        /* Using RestTemplate to communicate with Department service.
+        /*
+        ********************* Using RestTemplate to communicate with Department service.*******************************
         ResponseEntity<DepartmentDto> departmentDtoResponseEntity = restTemplate.
                 getForEntity(
                         "http://localhost:8080/api/departments/get/" + fetchedEmployee.getDepartmentCode(),
                         DepartmentDto.class);
         DepartmentDto departmentDto = departmentDtoResponseEntity.getBody();*/
 
+        /*
+        *********************** Using WebClient to communicate with Department service ******************************
         DepartmentDto departmentDto = webClient.get()
                 .uri("http://localhost:8080/api/departments/get/" + fetchedEmployee.getDepartmentCode())
                 .retrieve()
                 .bodyToMono(DepartmentDto.class)
-                .block();         // block()  -> specifies synchronous call
-        ApiResponseDto apiResponseDto = new ApiResponseDto(
+                .block();         // block()  -> specifies synchronous call*/
+
+        DepartmentDto departmentDto = apiClient.getDepartmentByCode(fetchedEmployee.getDepartmentCode());
+        return new ApiResponseDto(
                 modelMapper.map(fetchedEmployee, EmployeeDto.class),
                 departmentDto);
-        return apiResponseDto;
     }
 }
