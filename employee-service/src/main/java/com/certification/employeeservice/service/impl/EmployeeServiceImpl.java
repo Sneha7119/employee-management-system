@@ -3,19 +3,16 @@ package com.certification.employeeservice.service.impl;
 import com.certification.employeeservice.dto.ApiResponseDto;
 import com.certification.employeeservice.dto.DepartmentDto;
 import com.certification.employeeservice.dto.EmployeeDto;
+import com.certification.employeeservice.dto.OrganizationDto;
 import com.certification.employeeservice.entity.Employee;
 import com.certification.employeeservice.repository.EmployeeRepository;
 import com.certification.employeeservice.service.EmployeeService;
-import io.github.resilience4j.circuitbreaker.annotation.CircuitBreaker;
 import io.github.resilience4j.retry.annotation.Retry;
 import lombok.AllArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-import org.springframework.web.client.RestTemplate;
-import org.springframework.web.reactive.function.client.WebClient;
 
 @AllArgsConstructor
 @Service
@@ -24,7 +21,9 @@ public class EmployeeServiceImpl implements EmployeeService {
     private EmployeeRepository employeeRepository;
     // private RestTemplate restTemplate;
     //private WebClient webClient;
-    private APIClient apiClient;
+    private DepartmentClient departmentClient;
+
+    private OrganizationClient organizationClient;
 
     private ModelMapper modelMapper;
 
@@ -59,10 +58,13 @@ public class EmployeeServiceImpl implements EmployeeService {
                 .bodyToMono(DepartmentDto.class)
                 .block();         // block()  -> specifies synchronous call*/
 
-        DepartmentDto departmentDto = apiClient.getDepartmentByCode(fetchedEmployee.getDepartmentCode());
+        DepartmentDto departmentDto = departmentClient.getDepartmentByCode(fetchedEmployee.getDepartmentCode());
+        OrganizationDto organizationDto = organizationClient.
+                getOrganizationByCode(fetchedEmployee.getOrganizationCode());
         return new ApiResponseDto(
                 modelMapper.map(fetchedEmployee, EmployeeDto.class),
-                departmentDto);
+                departmentDto,
+                organizationDto);
     }
 
     public ApiResponseDto getDefaultDepartment(Long id, Exception exception) {
@@ -73,8 +75,14 @@ public class EmployeeServiceImpl implements EmployeeService {
         departmentDto.setDepartmentCode("DD");
         departmentDto.setDepartmentDescription("Default Department since Deaprtment service is down");
 
+        OrganizationDto organizationDto = new OrganizationDto();
+        organizationDto.setOrganizationName("DEF");
+        organizationDto.setOrganizationDescription("Default Org");
+        organizationDto.setOrganizationCode("DO");
+
         return new ApiResponseDto(
                 modelMapper.map(fetchedEmployee, EmployeeDto.class),
-                departmentDto);
+                departmentDto,
+                organizationDto);
     }
 }

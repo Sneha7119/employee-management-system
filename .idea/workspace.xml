@@ -4,14 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f14c5c25-d008-48a3-ad9b-4db3afee9fe7" name="Changes" comment="Centralised configurations using config-server">
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/controller/MessageController.java" afterDir="false" />
+    <list default="true" id="f14c5c25-d008-48a3-ad9b-4db3afee9fe7" name="Changes" comment="Added organization service">
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/dto/OrganizationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/service/impl/OrganizationClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/controller/OrganizationController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/dto/OrganizationDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/entity/Organization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/repository/OrganizationRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/service/OrganizationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/service/impl/OrganizationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/department-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/department-service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/dto/ApiResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/dto/ApiResponseDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/dto/EmployeeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/dto/EmployeeDto.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/entity/Employee.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/service/impl/APIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/service/impl/DepartmentClient.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organization-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/OrganizationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/OrganizationServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/organization-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +36,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -69,7 +84,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "C:/Users/sneha/Workspace/employee-management-system",
+    "last_opened_file_path": "C:/Users/sneha/Workspace/employee-management-system/organization-service",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
@@ -77,10 +92,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.certification.employeeservice.dto" />
       <recent name="com.certification.employeeservice.controller" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.EmployeeServiceApplication">
+  <component name="RunManager" selected="Application.DepartmentServiceApplication">
     <configuration name="ApiGatewayApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.certification.apigateway.ApiGatewayApplication" />
       <module name="api-gateway" />
@@ -147,12 +163,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ServiceRegistryApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.certification.serviceregistry.ServiceRegistryApplication" />
-      <module name="service-registry" />
+    <configuration name="OrganizationServiceApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.certification.organizationservice.OrganizationServiceApplication" />
+      <module name="organization-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.certification.serviceregistry.*" />
+          <option name="PATTERN" value="com.certification.organizationservice.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -162,19 +178,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.DepartmentServiceApplicationInstance2" />
+      <item itemvalue="Application.OrganizationServiceApplication" />
       <item itemvalue="Application.ApiGatewayApplication" />
       <item itemvalue="Application.ConfigServerApplication" />
       <item itemvalue="Application.DepartmentServiceApplication" />
       <item itemvalue="Application.EmployeeServiceApplication" />
-      <item itemvalue="Application.ServiceRegistryApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.EmployeeServiceApplication" />
+        <item itemvalue="Application.OrganizationServiceApplication" />
+        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.DepartmentServiceApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
-        <item itemvalue="Application.ServiceRegistryApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -236,7 +252,21 @@
       <option name="project" value="LOCAL" />
       <updated>1677544901768</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Circuit breaker">
+      <created>1678267991726</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1678267991726</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Added organization service">
+      <created>1678269896809</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1678269896809</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -247,6 +277,8 @@
     <MESSAGE value="Configuring api-gateway" />
     <MESSAGE value="Automatic route creation" />
     <MESSAGE value="Centralised configurations using config-server" />
-    <option name="LAST_COMMIT_MESSAGE" value="Centralised configurations using config-server" />
+    <MESSAGE value="Circuit breaker" />
+    <MESSAGE value="Added organization service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added organization service" />
   </component>
 </project>
