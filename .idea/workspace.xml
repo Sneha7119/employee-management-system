@@ -5,27 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f14c5c25-d008-48a3-ad9b-4db3afee9fe7" name="Changes" comment="Added organization service">
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/dto/OrganizationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/service/impl/OrganizationClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/controller/OrganizationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/dto/OrganizationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/entity/Organization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/repository/OrganizationRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/service/OrganizationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/service/impl/OrganizationServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/src/component/EmployeeComponent.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/src/service/EmployeeService.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ems/src/setupTests.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/dto/ApiResponseDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/dto/ApiResponseDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/dto/EmployeeDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/dto/EmployeeDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/entity/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/entity/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/service/impl/APIClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/service/impl/DepartmentClient.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/service/impl/EmployeeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/employee-service/src/main/java/com/certification/employeeservice/service/impl/EmployeeServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/OrganizationServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/java/com/certification/organizationservice/OrganizationServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/organization-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/organization-service/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +73,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2MJ5KmcaFQWE8Gt1KDkb3YnurZA" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -80,9 +83,9 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "17",
     "last_opened_file_path": "C:/Users/sneha/Workspace/employee-management-system/organization-service",
     "project.structure.last.edited": "Modules",
@@ -186,9 +189,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.EmployeeServiceApplication" />
         <item itemvalue="Application.OrganizationServiceApplication" />
-        <item itemvalue="Application.ApiGatewayApplication" />
         <item itemvalue="Application.DepartmentServiceApplication" />
         <item itemvalue="Application.ConfigServerApplication" />
       </list>
@@ -266,10 +269,25 @@
       <option name="project" value="LOCAL" />
       <updated>1678269896809</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added organization service">
+      <created>1678310589710</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1678310589710</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Added organization service">
+      <created>1678310623922</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1678310623922</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Adding service-registry" />
     <MESSAGE value="Registering in service-registry" />
     <MESSAGE value="Load balancing" />
